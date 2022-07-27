@@ -41,6 +41,7 @@ namespace ConverterApp
                 string path = System.IO.Path.GetExtension(str);
                 App.Current.Resources["filePath"] = str;
                 txbFileName.Text = str;
+
                 if (path == ".docx")
                 {
                     ConverterFrame.Navigate(new ConvertWord());
