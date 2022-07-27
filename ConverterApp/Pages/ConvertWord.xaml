@@ -1,0 +1,50 @@
+﻿<Page x:Class="ConverterApp.Pages.ConvertWord"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ConverterApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="387" d:DesignWidth="522"
+      Title="ConvertPDF_Word">
+
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="531*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>-->
+
+        <!--Элементы интерфейса располагающиеся в 1 строке-->
+
+
+        <Button
+                x:Name="bntOpenFile"
+                Click="BntOpenFile_Click"
+                Content="В PDF"
+                Width="90"
+                Height="20"
+                Margin="21,44,411,323"/>
+        <TextBox x:Name="txbName" Width="100" Height="20" RenderTransformOrigin="0.233,0.406" Margin="128,44,294,323"/>
+        
+        <Button
+            x:Name="bntConvertTXT"
+            Click="bntConvertTXT_Click"
+            Content="В TXT"
+            Width="90"
+            Height="20"
+            Margin="21,79,411,288"/>
+        <Button
+            x:Name="bntConvertEpub"
+            Click="bntConvertEpub_Click"
+            Content="В Epub"
+            Width="90"
+            Height="20"
+            Margin="21,122,411,245"/>
+
+        <!--Элементы во 2 стобце-->
+
+    </Grid>
+</Page>

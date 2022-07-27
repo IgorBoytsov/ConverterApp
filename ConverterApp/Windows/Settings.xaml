@@ -1,0 +1,36 @@
+﻿<Window x:Class="ConverterApp.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConverterApp"
+        mc:Ignorable="d"
+        Title="Settings" Height="285" Width="494">
+    <Grid x:Name="mainGrid">
+
+        <Label Content="Тема приложения" HorizontalAlignment="Left" Margin="12,2,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="comboBoxTheme" HorizontalAlignment="Left" Margin="12,33,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Светлая"/>
+            <ComboBoxItem Content="Темная"/>
+        </ComboBox>
+
+        <ComboBox x:Name="comboBoxLanguage" HorizontalAlignment="Left" Margin="12,99,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Русский"/>
+            <ComboBoxItem Content="Английский"/>
+            <ComboBoxItem Content="Немецкий"/>
+        </ComboBox>
+
+        <Button 
+            x:Name="btnSave"
+            Click="btnSave_Click"
+            Content="Сохранить и выйти" 
+            HorizontalAlignment="Left"
+            Margin="381,242,0,0" 
+            VerticalAlignment="Top"/>
+
+
+
+        <Label Content="Язык" HorizontalAlignment="Left" Margin="39,68,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
